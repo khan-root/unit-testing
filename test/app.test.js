@@ -3,6 +3,8 @@ import assert  from 'node:assert'
 import { greet, sumNumber } from "../app.js"
 
 
+// describe work same as suite
+
 suite('Greeting and sum functions',()=>{
 
     
