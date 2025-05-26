@@ -1,0 +1,15 @@
+exports[`User Fetched > fetches data from server 1`] = `
+{
+  "id": 1,
+  "name": "Ali",
+  "roles": [
+    "user",
+    "admin"
+  ],
+  "lastLogin": "2025-05-26T18:59:01.907Z",
+  "preference": {
+    "notifications": true,
+    "theme": "dark"
+  }
+}
+`;
