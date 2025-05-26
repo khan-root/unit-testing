@@ -1,21 +1,29 @@
-import {test} from 'node:test'
+import {suite, test} from 'node:test'
 import assert  from 'node:assert'
-import { greet } from "../app.js"
-
-test("greet return the correct greeting", ()=>{
-
-    // AAA
-
-    /**
-     * Arrange
-     * Act
-     * Assert
-    */
+import { greet, sumNumber } from "../app.js"
 
 
-    const expected = "Hello, World"
-    const actual = greet("World")
+suite('Greeting and sum functions',()=>{
 
-    assert.strictEqual(actual, expected)
+    
+    test("greet return the correct greeting", ()=>{
+        // AAA
+        /**
+         * Arrange
+         * Act
+         * Assert
+        */
+       const expected = "Hello, World"
+       const actual = greet("World")
+       
+       assert.strictEqual(actual, expected)
+       
+    })
+
+    test("return sum of two numbers", ()=>{
+        const expected = 6
+        const actual = sumNumber(4,2)
+        assert.strictEqual(actual, expected)
+    })
 
 })
